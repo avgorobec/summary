@@ -1,4 +1,5 @@
 $main-bg-color: #dbe5e7;
+$caption-color: #4c5155;
 
 html, body {
     height: 100%;
@@ -81,7 +82,7 @@ html, body {
 .caption {
     &__name {
         font-size: 1.6rem;
-        color: #4c5155;
+        color: $caption-color;
         font-weight: bold;
         margin-top: 10px;
     }
@@ -95,12 +96,78 @@ html, body {
 
 .main {
     background-color: $main-bg-color;
+    padding: 60px 15px;
+    display: flex;
+    justify-content: center;
 
     &__wrapper {
-        //display: flex;
-        //flex-wrap: wrap;
+        display: flex;
+        flex: 1 1;
         max-width: 900px;
-        margin: auto;
-        background-color: #ef6c00;
+        justify-content: center;
     }
 }
+
+.left-column {
+    display: flex;
+    flex: 1 1 600px;
+    max-width: 600px;
+    margin-right: 20px;
+}
+.right-column {
+    display: flex;
+    flex: 1 1 280px;
+    max-width: 280px;
+}
+
+.block {
+    width: 100%;
+    background: white;
+    padding: 25px 20px;
+}
+
+.block-caption {
+    display: block;
+    font-size: 1.4rem;
+    color: $caption-color;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.right-column__contacts div {
+    margin-bottom: 15px;
+}
+.contacts-icons {
+    width: 15px;
+    height: 15px;
+    opacity: 0.5;
+    margin-right: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
