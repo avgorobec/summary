@@ -1,6 +1,10 @@
 $main-bg-color: #dbe5e7;
 $caption-color: #4c5155;
 
+* {
+    box-sizing: border-box;
+}
+
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
@@ -102,7 +106,7 @@ html, body {
 
     &__wrapper {
         display: flex;
-        flex: 1 1;
+        flex: 1 1 900px;
         max-width: 900px;
         justify-content: center;
     }
@@ -110,20 +114,26 @@ html, body {
 
 .left-column {
     display: flex;
-    flex: 1 1 600px;
-    max-width: 600px;
+    flex: 1 1 650px;
+    flex-direction: column;
+    max-width: 650px;
     margin-right: 20px;
 }
 .right-column {
     display: flex;
-    flex: 1 1 280px;
-    max-width: 280px;
+    flex: 1 1 250px;
+    flex-direction: column;
+    max-width: 250px;
+
 }
 
 .block {
     width: 100%;
     background: white;
     padding: 25px 20px;
+    margin: 0 0 20px 0;
+    font-weight: 300;
+    line-height: 1.3rem;
 }
 
 .block-caption {
@@ -137,15 +147,35 @@ html, body {
 .right-column__contacts div {
     margin-bottom: 15px;
 }
-.contacts-icons {
+.list-icons {
     width: 15px;
     height: 15px;
     opacity: 0.5;
-    margin-right: 15px;
+    position: absolute;
+    left: 0;
 }
 
+.list {
+    list-style-type: none;
+    padding-left: 24px;
+    position: relative;
 
+    li {
+        margin-bottom: 10px;
+    }
+}
 
+.external-link {
+    text-decoration: none;
+    color: #00ad00;
+    font-weight: 400;
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+.external-link:hover {
+    opacity: 1;
+    color: green;
+}
 
 
 
