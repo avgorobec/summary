@@ -18,6 +18,7 @@ html, body {
 
 .header {
     background-color: #f5f5f5;
+    padding: 0 20px;
 
     &__wrapper {
         display: flex;
@@ -25,12 +26,14 @@ html, body {
         justify-content: space-between;
         margin: auto;
         max-width: 900px;
-        //background-color: white;
     }
 
     &__left-block {
         display: flex;
         flex-wrap: wrap;
+        padding: 30px 0 30px;
+
+
     }
 
     &__right-block {
@@ -66,6 +69,28 @@ html, body {
     &__contact-me:hover {
         background-color: #00b520;
         cursor: pointer;
+    }
+}
+
+//.left-column__about-me p {
+//    margin: 0;
+//}
+
+@media (max-width: 720px) {
+    .header__wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .header {
+        padding: 30px 20px;
+    }
+    .header__left-block {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 0;
+    }
+    .left-block__foto {
+        margin-bottom: 20px;
     }
 }
 
@@ -125,6 +150,28 @@ html, body {
     flex-direction: column;
     max-width: 250px;
 
+}
+
+@media (max-width: 992px) {
+    .main__wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .left-column {
+        width: 100%;
+        max-width: 700px;
+        margin-right: 0;
+    }
+    .right-column {
+        width: 100%;
+        max-width: 700px;
+    }
+}
+
+@media (max-width: 576px) {
+    .main {
+        padding: 20px 5px;
+    }
 }
 
 .block {
